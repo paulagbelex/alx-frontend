@@ -1,4 +1,4 @@
-/* Grid styling and custom variables */
+/* Clear the context of the grid */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -557,3 +557,8 @@
     text-align: right;
   }
   
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
